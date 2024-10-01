@@ -25,8 +25,8 @@ def display_result(player_choice, computer_choice, winner, player_wins, computer
         "A draw...try again! ☯️"
     ]
     
-    print(f"\nYour choice: {emoji_dict[player_choice]} ({player_choice})")
-    print(f"Computer's choice: {emoji_dict[computer_choice]} ({computer_choice})")
+    print(f"\nYour choice: {emoji_dict[player_choice]}")
+    print(f"Computer's choice: {emoji_dict[computer_choice]}")
 
     if winner == 'tie':
         print(random.choice(tie_messages))
