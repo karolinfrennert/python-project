@@ -15,10 +15,29 @@ def main():
         display_result(player_choice, computer_choice, winner, game.player_wins, game.computer_wins)
 
         play_again = input("Do you want to play again? (y/n): ").lower()
-        if play_again != 'y':   
+        if play_again != 'y':
+            if game.player_wins > game.computer_wins:
+                final_message = random.choice([
+                    "You're the ultimate champion! 🏆",
+                    "Victory is yours! 👑",
+                    "You've bested the machine! 🎉"
+                ])
+            elif game.player_wins < game.computer_wins:
+                final_message = random.choice([
+                    "The computer reigns supreme! 🤖",
+                    "It looks like you've been outplayed! 🙃",
+                    "Tough luck! The computer wins this time! 💻"
+                ])
+            else:
+                final_message = random.choice([
+                    "It's a tie overall! Balance has been restored. ⚖️",
+                    "Neither side wins. What a close match! 🕊️",
+                    "An evenly matched battle! 🤝"
+                ])
             
             print("\nThank you for playing!")
             print(f"Final Score: Player: {game.player_wins}, Computer: {game.computer_wins}")
+            print(final_message)
             break
 
 if __name__ == "__main__":
