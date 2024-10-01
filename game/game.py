@@ -20,7 +20,7 @@ def main():
                 final_message = random.choice([
                     "You're the ultimate champion! 🏆",
                     "Victory is yours! 👑",
-                    "You've bested the machine! 🎉"
+                    "You've mastered the art of rock, paper, scissors! 🎉"
                 ])
             elif game.player_wins < game.computer_wins:
                 final_message = random.choice([
@@ -35,7 +35,7 @@ def main():
                     "An evenly matched battle! 🤝"
                 ])
             
-            print("\nThank you for playing!")
+            print("\nThank you for playing! GG")
             print(f"Final Score: Player: {game.player_wins}, Computer: {game.computer_wins}")
             print(final_message)
             break

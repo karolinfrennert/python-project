@@ -13,9 +13,9 @@ class RockPaperScissorsGame:
             return 'tie'
 
         if (
-            (player_choice == 'r' and computer_choice == 'scissors') or
-            (player_choice == 's' and computer_choice == 'paper') or
-            (player_choice == 'p' and computer_choice == 'rock')
+            (player_choice == 'r' and computer_choice == 's') or
+            (player_choice == 's' and computer_choice == 'p') or
+            (player_choice == 'p' and computer_choice == 'r')
         ):
             self.player_wins += 1
             return 'player'

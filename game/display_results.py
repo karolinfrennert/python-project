@@ -8,20 +8,20 @@ def display_result(player_choice, computer_choice, winner, player_wins, computer
     }
     
     win_messages = [
-        "Awesome! You smashed it! 💥",
-        "You're on fire! 🔥",
-        "You've got the magic touch! ✨"
+        "You are the winner! You smashed it! 💥",
+        "You won! You're on fire! 🔥",
+        "You are the winner! You've got the magic touch! ✨"
     ]
     
     lose_messages = [
         "Oh no, you lost. Better luck next time! 🍀",
-        "Dang! The robots are taking over 🤖",
+        "Dang you lost! The robots are taking over 🤖",
         "You lost... Don't give up! 💪"
     ]
     
     tie_messages = [
         "It's a tie! You can do better 😐",
-        "No winners here... at least you didn't lose! 🤙🏻",
+        "It's a tie, no winners here...🤙🏻",
         "A draw...try again! ☯️"
     ]
     
