@@ -2,9 +2,9 @@ import random
 
 def display_result(player_choice, computer_choice, winner, player_wins, computer_wins):
     emoji_dict = {
-        'rock': '🪨',
-        'paper': '📄',
-        'scissors': '✂'
+        'r': '🪨',
+        'p': '📄',
+        's': '✂'
     }
     
     win_messages = [
